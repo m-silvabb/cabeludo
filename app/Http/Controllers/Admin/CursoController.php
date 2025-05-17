@@ -21,7 +21,7 @@ class CursoController extends Controller
         if (isset($dados['publicado'])) {
             $dados['publicado'] = 'sim';
         } else {
-            $dados['publicado'] = 'nao';
+            $dados['publicado'] = 'não';
         }
     
         if ($req->hasFile('arquivo')) {
@@ -44,7 +44,7 @@ class CursoController extends Controller
         if (isset($dados['publicado'])) {
             $dados['publicado'] = 'sim';
         } else {
-            $dados['publicado'] = 'nao';
+            $dados['publicado'] = 'não';
         }
     
         if ($req->hasFile('arquivo')) {
@@ -53,8 +53,8 @@ class CursoController extends Controller
             $dir = "img/cursos/";
             $ex = $imagem->guessClientExtension();
             $nomeImagem = "imagem_".$num.".".$ex;
-        $imagem->move($dir,$nomeImagem);
-        $dados['imagem'] = $dir."/".$nomeImagem;
+            $imagem->move($dir,$nomeImagem);
+            $dados['imagem'] = $dir."/".$nomeImagem;
         }
 
         Curso::find($id)->update($dados);
