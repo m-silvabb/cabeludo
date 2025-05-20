@@ -14,7 +14,7 @@
 
         <nav>
             <div class="nav-wrapper light-blue">
-                <a href="#!" class="brand-logo">Projeto Cursos</a>
+                <a href="#!" class="brand-logo">Projeto</a>
                 <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="/">Home</a></li>

@@ -13,9 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('layout.site');
-});
+Route::get('/',
+['as'=>'home','uses'=>'App\Http\Controllers\homeController@index']);
 
 Route::get('/admin/alunos',
 ['as' =>'admin.alunos',
